@@ -1,0 +1,6 @@
+@Inalambria.PruebaTecnica.WebApi_HostAddress = http://localhost:5168
+
+GET {{Inalambria.PruebaTecnica.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
