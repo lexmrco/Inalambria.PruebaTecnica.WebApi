@@ -178,7 +178,7 @@
             }
             else
             {
-                Console.WriteLine("Numero no esta en el rango");
+                letra = "Valor fuera del rango";
             }
             return letra.ToUpper();
         }

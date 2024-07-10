@@ -1,5 +1,6 @@
 using Inalambria.PruebaTecnica.WebApi.Models;
 using Inalambria.PruebaTecnica.WebApi.Negocios;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Inalambria.PruebaTecnica.WebApi.Controllers
@@ -16,6 +17,7 @@ namespace Inalambria.PruebaTecnica.WebApi.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Post([FromBody] SolicitudModel solicitud)
         {
             try
